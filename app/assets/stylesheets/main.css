@@ -1,0 +1,51 @@
+body {
+  background: lightcyan;
+  font-family: helvetica;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song-box {
+  flex-basis: 15%;
+  justify-content: center;
+  background: lightpink;
+  margin: 20px;
+  border-radius: 10%;
+}
+ 
+
+li {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+img {
+  border-radius: 50%;
+  max-height: 100px;
+  height: auto;
+  filter: grayscale(100%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.song-title {
+  font-style: italic;
+  font-size: large;
+}
