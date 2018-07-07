@@ -1,5 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Music Box Songs</title>
+<link rel="stylesheet" href="main.css"> 
+</head>
+<body>
 <h1>All Songs</h1>
+<div class="container-1">
 <% @songs.each do |song| %>
-  <h2><%= song.title %></h2>
-  <h2>Plays: <%= song.play_count %></h2>
+  <div class="song-box" id="<%=song.id%>%">
+  <li><%= image_tag("adele-vogue-cover-march-2016-01.jpg", :alt => "Adele Vogue 2018", :class => "song-image") %></li>
+  <li class="song-title"><%= song.title %></li>
+  <li class="song-artist">Artist: <%= song.artist.name %></li>
+  <li class="song-plays">Plays: <%= song.play_count %></li>
+  </div>
 <% end %>
+</div>
+</body>
+</html>
